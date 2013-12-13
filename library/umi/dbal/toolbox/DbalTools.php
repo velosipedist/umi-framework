@@ -57,7 +57,10 @@ class DbalTools implements IToolbox
      *                'password' => 'secret',
      *                'host' => 'localhost',
      *                'charset' => 'utf8', // for some drivers
-     *                ...
+     *
+     *                // sqlite содержит только 2 взаимоисключающих опции, всё остальное игнорируется
+     *                'path' => 'absolute/path/to/your/db', // подключение к указанному файлу
+     *                'memory' => true,                     // создание бд в памяти
      *            ]
      *        ]
      *    ],
